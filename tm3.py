@@ -29,7 +29,7 @@ def setTme(e):
                 mesSt = a[1].strip()
             tmSec = (int(b[0]) - datetime.datetime.now().hour)*3600 + (int(b[1]) - datetime.datetime.now().minute)*60 - datetime.datetime.now().second
             if tmSec < 0:
-                tmSec = 0
+                tmSec = 24*3600
             tk0.destroy()
         
     return
